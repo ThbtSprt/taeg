@@ -66,6 +66,8 @@ def decalage(remise, premiere_mens):
 
 def calcul(montant_credit, nb_mens, montant_mens, frais='', num_mens_spec='', montant_mens_spec='', deblocage='', premiere_mens=''):
     '''
+    ARGUMENTS :
+
     *montant_credit :
         montant total emprunté
     *nb_mens :
@@ -76,12 +78,15 @@ def calcul(montant_credit, nb_mens, montant_mens, frais='', num_mens_spec='', mo
         montant des frais non-compris dans les mensualités
     *num_mens_spec (facultatif) :
         numéro(s) d'ordre des éventuelles mensualités spéciales
-        (à séparer par une double virgule : ex : '23,,24')
+        (à séparer par une virgule : ex : '23,24')
     *montant_mens_spec (facultatif) :
         montant des mensualités spéciales, dans le même ordre que num_mens_spec
-        (à séparer par une double virgule : ex : '32.33,,32.33,,32.333')
-    *decalage :
-        nombre de jours entre le déblocage des fonds et la 1ere mensualités'''
+        (à séparer par une virgule : ex : '32.33,32.33,32.333')
+    *deblocage (facultatif):
+        date de déblocage des fonds
+    *premiere_mens (facultatif) :
+        date du premier prélèvement d'échéance
+    '''
 
     mensualites = liste_M(nb_mens, montant_mens, num_mens_spec, montant_mens_spec)
     if frais == '':

@@ -1,7 +1,7 @@
 from setuptools import setup
 
 setup(name='taeg',
-      version='0.1',
+      version='0.2',
       description='Calcul du taux annuel effectif global',
       author='Thibaut Spriet',
       author_email='thibaut@spriet.online',
