@@ -5,7 +5,7 @@ Module python de recherche du taux annuel effectif global à partir des données
 
 **Textes de référence :**
 - Articles R.314-1 et suivants du code de la consommation [lien](https://www.legifrance.gouv.fr/codes/section_lc/LEGITEXT000006069565/LEGISCTA000032807602/#LEGISCTA000032807602)
-- Annexe 1 de la Directive DIRECTIVE 2008/48/CE DU PARLEMENT EUROPÉEN ET DU CONSEIL du 23 avril 2008 [lien](https://eur-lex.europa.eu/legal-content/FR/TXT/PDF/?uri=CELEX:32008L0048&from=FR)
+- Annexe 1 de la Directive DIRECTIVE 2008/48/CE DU PARLEMENT EUROPÉEN ET DU CONSEIL du 23 avril 2008 [lien (voir page 19 du pdf)](https://eur-lex.europa.eu/legal-content/FR/TXT/PDF/?uri=CELEX:32008L0048&from=FR)
 
 
 **Installation :**
