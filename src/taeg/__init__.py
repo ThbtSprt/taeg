@@ -105,6 +105,6 @@ def calcul(montant_credit, nb_mens, montant_mens, frais='', num_mens_spec='', mo
             else:
                 taux -= k
             test = formule_test(nb_mens, mensualites, taux, montant_credit, frais, report)
-            print(test)
+            #print(test)
         k = k/10
     return float(taux)
