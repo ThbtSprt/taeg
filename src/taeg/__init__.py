@@ -36,10 +36,10 @@ def liste_M(nb_mens, montant_mens, num_mens_spec='', montant_mens_spec=''):
         montant des mensualités principales (hors assurance)
     *num_mens_spec (facultatif) :
         numéro(s) d'ordre des éventuelles mensualités spéciales
-        (à séparer par une double virgule : ex : '23,,24')
+        (à séparer par une virgule : ex : '23,24')
     *montant_mens_spec (facultatif) :
         montant des mensualités spéciales, dans le même ordre que num_mens_spec
-        (à séparer par une double virgule : ex : '32.33,,32.33,,32.333')'''
+        (à séparer par une virgule : ex : '32.33,32.33,32.333')'''
 
     liste = []
     for i in range(int(nb_mens)):

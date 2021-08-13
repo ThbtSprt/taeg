@@ -1,5 +1,5 @@
 # taeg
-[![](https://img.shields.io/badge/pypi-v0.2-blue)](https://pypi.org/project/taeg/)
+[![](https://img.shields.io/badge/pypi-v0.3-blue)](https://pypi.org/project/taeg/)
 
 Module python de recherche du taux annuel effectif global à partir des données du contrat (dans l'hypothèse d'un déblocage des fonds en une seule fois).
 
