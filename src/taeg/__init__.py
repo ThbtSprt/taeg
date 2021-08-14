@@ -58,10 +58,9 @@ def decalage(remise, premiere_mens):
         premiere = frdate.conv(premiere_mens, True)
         deca = relativedelta(premiere, debloc)
         annee = ((debloc+relativedelta(days=deca.days))-(debloc+relativedelta(days=deca.days)-relativedelta(years=1))).days
-        D = deca.years+d(deca.months)/12+d(deca.days)/annee
-    else:
-        D = d(1/12)
-    return D
+        resultat = deca.years+d(deca.months)/12+d(deca.days)/annee
+        return resultat
+    return 1/12
 
 
 def calcul(montant_credit, nb_mens, montant_mens, frais='', num_mens_spec='', montant_mens_spec='', deblocage='', premiere_mens=''):
@@ -98,13 +97,18 @@ def calcul(montant_credit, nb_mens, montant_mens, frais='', num_mens_spec='', mo
     else:
         report = 1/12
     test = formule_test(nb_mens, mensualites, taux, montant_credit, frais, report)
-    while abs(test) > 0.00001:
-        for i in range(10):
+    while abs(test) > 0 and k>0.000001:
+        results=[]
+        for i in range(10):    
             if test > 0:
                 taux += k
             else:
                 taux -= k
             test = formule_test(nb_mens, mensualites, taux, montant_credit, frais, report)
+            if test in results:
+                break
             #print(test)
+            results.append(test)
         k = k/10
     return float(taux)
+
