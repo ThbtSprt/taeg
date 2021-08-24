@@ -16,7 +16,7 @@ def formule_test(nb_mens, liste_mens, TAEG, montant_credit, frais=0, decalage=1/
     *frais :
         frais non-inclus dans le montant des mensualités
     *decalage :
-        nombre de jours entre le déblocage des fonds et la 1ere mensualités'''
+        fraction d'année entre le déblocage des fonds et la 1ere mensualités'''
 
     somme = 0
     for i in range(len(liste_mens)):
